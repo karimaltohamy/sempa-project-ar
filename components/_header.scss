@@ -1,0 +1,181 @@
+@import "../components/variables";
+
+// start mini header
+.mini_header {
+  padding: 8px 0;
+  background-color: $primary-color;
+  color: white;
+
+  .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .lang {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    .contact_info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .item {
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mini_header {
+    padding: 4px 0;
+    .line {
+      .contact_info {
+        .item {
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+// end mini header
+
+// start header
+header {
+  padding: 12px 0;
+  position: relative;
+  z-index: 9999;
+
+  .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      img {
+        width: 110px;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .link {
+        font-size: 19px;
+        font-weight: 600;
+        transition: all 0.3s;
+
+        &:hover,
+        &.active {
+          color: $primary-color !important;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .lang {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        img {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .mode {
+        cursor: pointer;
+
+        i {
+          display: none;
+
+          &.show {
+            display: block;
+          }
+        }
+      }
+
+      .btn_contact {
+        background: $primary-color;
+        color: white !important;
+        padding: 7px 25px;
+        border-radius: 50px;
+      }
+
+      .icon_menu {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 10px 0;
+
+    .line {
+      .logo {
+        img {
+          width: 70px;
+        }
+      }
+
+      .links {
+        display: none;
+      }
+
+      .info {
+        gap: 10px;
+
+        .lang {
+          display: none;
+        }
+
+        .btn_outline {
+          display: none;
+        }
+
+        .icon_menu {
+          cursor: pointer;
+          display: block;
+
+          svg {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+// end header

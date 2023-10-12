@@ -1,0 +1,160 @@
+@import "./variables";
+
+$main-color: #1967d2;
+$dark-blue: #002860;
+$dark-text: #17171d;
+
+// start footer
+footer {
+  padding: 50px 0 0;
+  background-color: #080b11;
+  color: white;
+  border-top: 5px solid $primary-color;
+
+  .row_top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #232842;
+
+    .widget_about {
+      .logo {
+        margin-bottom: 20px;
+        img {
+          width: 120px;
+        }
+      }
+
+      .desc {
+        font-size: 18px;
+      }
+
+      .contact_info {
+        font-size: 18px;
+        font-weight: 600;
+
+        margin-bottom: 10px;
+
+        span {
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .col_links {
+      .title {
+        color: $main-color;
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 40px;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          right: 0;
+          height: 3px;
+          width: 80px;
+          border-radius: 20px;
+          background-color: $main-color;
+        }
+      }
+
+      span {
+        display: block;
+        color: rgb(205, 205, 205);
+        font-size: 15px;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    p {
+      margin-bottom: 0;
+      font-size: 15px;
+    }
+
+    .social_media {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        i {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding: 30px 0 0;
+
+    .row_top {
+      padding-bottom: 15px;
+
+      .widget_about {
+        margin-bottom: 20px;
+
+        .logo {
+          img {
+            width: 100px;
+          }
+        }
+
+        .desc {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        .contact_info {
+          font-size: 15px;
+          margin-bottom: 4px;
+
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .col_links {
+        margin-bottom: 15px;
+        .title {
+          font-size: 19px;
+          margin: auto;
+          margin-bottom: 20px;
+          width: fit-content;
+
+          &:after {
+            height: 2px;
+            width: 60px;
+            bottom: -5px;
+          }
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .footer_bottom {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
+// end footer

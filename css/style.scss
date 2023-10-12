@@ -67,6 +67,15 @@ main {
   padding: 70px 0;
 }
 
+.line_section {
+  display: flex;
+  gap: 40px;
+
+  > div {
+    width: 50%;
+  }
+}
+
 @media (max-width: 768px) {
   .btn_fill,
   .btn_outline {
@@ -76,5 +85,14 @@ main {
 
   .section {
     padding: 35px 0;
+  }
+
+  .line_section {
+    flex-direction: column;
+    gap: 30px;
+
+    > div {
+      width: 100%;
+    }
   }
 }

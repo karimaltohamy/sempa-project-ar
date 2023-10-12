@@ -381,6 +381,216 @@ header .line .info .icon_menu {
     font-size: 18px;
   }
 }
+.veterinary_care_section .line .text .title {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.veterinary_care_section .line .text .desc {
+  font-size: 22px;
+  color: gray;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.veterinary_care_section .line .text .consultation {
+  font-size: 32px;
+  font-weight: 700;
+}
+.veterinary_care_section .line .text .consultation span {
+  color: #f17855;
+}
+.veterinary_care_section .line .image img {
+  width: 100%;
+}
+.veterinary_care_section .line .veterinary_services .item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.veterinary_care_section .line .veterinary_services .item .icon img {
+  width: 40px;
+}
+.veterinary_care_section .line .veterinary_services .item .title_service {
+  font-weight: 700;
+  font-size: 26px;
+}
+.veterinary_care_section .line .veterinary_services .item .desc_service {
+  color: gray;
+  font-size: 19px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .veterinary_care_section .line .text {
+    text-align: center;
+  }
+  .veterinary_care_section .line .text .title {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .veterinary_care_section .line .text .desc {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .veterinary_care_section .line .text .consultation {
+    font-size: 22px;
+  }
+  .veterinary_care_section .line .image {
+    text-align: center;
+  }
+  .veterinary_care_section .line .image img {
+    width: 80%;
+  }
+  .veterinary_care_section .line .veterinary_services {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .veterinary_care_section .line .veterinary_services .item .icon img {
+    width: 34px;
+  }
+  .veterinary_care_section .line .veterinary_services .item .title_service {
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+  .veterinary_care_section .line .veterinary_services .item .desc_service {
+    font-size: 16px;
+  }
+}
+.testimonials_section {
+  background-color: #f6eee5;
+}
+.testimonials_section .title {
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  z-index: 10;
+}
+.testimonials_section .title .icon {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.testimonials_section .title .icon svg {
+  width: 90px;
+  fill: #e1e1e1;
+}
+.testimonials_section .boxs {
+  margin-top: 70px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+  border: 2px dashed #778f9d;
+}
+.testimonials_section .boxs .box {
+  padding: 40px 25px;
+}
+.testimonials_section .boxs .box .comment {
+  font-size: 17px;
+  line-height: 1.7;
+  color: gray;
+}
+.testimonials_section .boxs .box .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.testimonials_section .boxs .box .profile .profile_img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.testimonials_section .boxs .box .profile h6 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .testimonials_section .title {
+    font-size: 25px;
+  }
+  .testimonials_section .title .icon svg {
+    width: 60px;
+  }
+  .testimonials_section .boxs {
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0px;
+  }
+  .testimonials_section .boxs .box {
+    padding: 15px 20px;
+  }
+  .testimonials_section .boxs .box .profile .profile_img img {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonials_section .boxs .box .profile h6 {
+    font-size: 18px;
+  }
+}
+.our_passion_section {
+  background-color: #f6eee5;
+}
+.our_passion_section .line .text .title {
+  font-weight: 700;
+}
+.our_passion_section .line .text .desc {
+  font-size: 19px;
+  color: gray;
+  line-height: 1.7;
+}
+.our_passion_section .line .text .features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.our_passion_section .line .text .features .feature:not(:last-child) {
+  margin-bottom: 20px;
+}
+.our_passion_section .line .text .features .feature .icon img {
+  width: 25px;
+}
+.our_passion_section .line .text .features .feature h4 {
+  margin-bottom: 0;
+}
+.our_passion_section .line .image {
+  text-align: center;
+}
+.our_passion_section .line .image img {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .our_passion_section .line .text {
+    text-align: center;
+  }
+  .our_passion_section .line .text .title {
+    font-size: 24px;
+  }
+  .our_passion_section .line .text .desc {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .our_passion_section .line .text .features .feature {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our_passion_section .line .text .features .feature h4 {
+    font-size: 18px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -444,6 +654,16 @@ main {
   padding: 70px 0;
 }
 
+.line_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.line_section > div {
+  width: 50%;
+}
+
 @media (max-width: 768px) {
   .btn_fill,
 .btn_outline {
@@ -452,5 +672,15 @@ main {
   }
   .section {
     padding: 35px 0;
+  }
+  .line_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .line_section > div {
+    width: 100%;
   }
 }

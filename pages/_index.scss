@@ -238,3 +238,299 @@
   }
 }
 // end our_services
+
+// start veterinary_care_section
+.veterinary_care_section {
+  .line {
+    .text {
+      .title {
+        font-size: 80px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        font-size: 22px;
+        color: gray;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .consultation {
+        font-size: 32px;
+        font-weight: 700;
+
+        span {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .veterinary_services {
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+
+        .icon {
+          img {
+            width: 40px;
+          }
+        }
+
+        .title_service {
+          font-weight: 700;
+          font-size: 26px;
+        }
+
+        .desc_service {
+          color: gray;
+          font-size: 19px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .veterinary_care_section {
+    .line {
+      .text {
+        text-align: center;
+
+        .title {
+          font-size: 35px;
+          margin-bottom: 5px;
+        }
+
+        .desc {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+
+        .consultation {
+          font-size: 22px;
+        }
+      }
+
+      .image {
+        text-align: center;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .veterinary_services {
+        text-align: center;
+        margin-top: 20px;
+
+        .item {
+          .icon {
+            img {
+              width: 34px;
+            }
+          }
+
+          .title_service {
+            font-size: 22px;
+            margin-bottom: 3px;
+          }
+
+          .desc_service {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+// end veterinary_care_section
+
+// start testimonials_section
+.testimonials_section {
+  background-color: #f6eee5;
+
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    z-index: 10;
+
+    .icon {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+
+      svg {
+        width: 90px;
+        fill: #e1e1e1;
+      }
+    }
+  }
+
+  .boxs {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+    border: 2px dashed #778f9d;
+
+    .box {
+      padding: 40px 25px;
+
+      .comment {
+        font-size: 17px;
+        line-height: 1.7;
+        color: gray;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .profile_img {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+
+        h6 {
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials_section {
+    .title {
+      font-size: 25px;
+
+      .icon {
+        svg {
+          width: 60px;
+        }
+      }
+    }
+
+    .boxs {
+      margin-top: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0px;
+
+      .box {
+        padding: 15px 20px;
+
+        .profile {
+          .profile_img {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          h6 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+// end testimonials_section
+
+// start our_passion_section
+.our_passion_section {
+  background-color: #f6eee5;
+
+  .line {
+    .text {
+      .title {
+        font-weight: 700;
+      }
+
+      .desc {
+        font-size: 19px;
+        color: gray;
+        line-height: 1.7;
+      }
+
+      .features {
+        .feature {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+
+          .icon {
+            img {
+              width: 25px;
+            }
+          }
+
+          h4 {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .image {
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .our_passion_section {
+    .line {
+      .text {
+        text-align: center;
+
+        .title {
+          font-size: 24px;
+        }
+
+        .desc {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .features {
+          .feature {
+            justify-content: center;
+
+            h4 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end our_passion_section

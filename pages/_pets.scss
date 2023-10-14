@@ -2,6 +2,24 @@
 
 // start shop_animals_section
 .shop_animals_section {
+  .path {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+    margin-bottom: 12px;
+
+    i {
+      font-size: 13px;
+    }
+
+    a {
+      &:hover {
+        color: $primary-color !important;
+      }
+    }
+  }
+
   .line {
     border-radius: 6px;
     overflow: hidden;

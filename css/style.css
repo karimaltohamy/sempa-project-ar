@@ -59,6 +59,10 @@ header {
   position: relative;
   z-index: 9999;
 }
+header.dark {
+  background: black;
+  color: white;
+}
 header .line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +85,49 @@ header .line .links {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
+}
+header .line .links .list_Links {
+  position: relative;
+}
+header .line .links .list_Links:hover .list {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  z-index: 999;
+  visibility: visible;
+}
+header .line .links .list_Links .list {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  border-radius: 6px;
+  border-bottom: 4px solid #f17855;
+  width: 200px;
+  color: rgb(18, 20, 27) !important;
+  z-index: -999;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  visibility: hidden;
+}
+header .line .links .list_Links .list li {
+  list-style: none;
+  padding: 10px;
+}
+header .line .links .list_Links .list li:not(:last-child) {
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+header .line .links .list_Links .list li .list_link {
+  text-transform: lowercase;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .line .links .list_Links .list li .list_link:hover, header .line .links .list_Links .list li .list_link.active {
+  color: #f17855 !important;
 }
 header .line .links .link {
   font-size: 19px;
@@ -1011,6 +1058,23 @@ footer .footer_bottom .social_media a i {
     font-size: 13px;
   }
 }
+.shop_animals_section .path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: gray;
+  margin-bottom: 12px;
+}
+.shop_animals_section .path i {
+  font-size: 13px;
+}
+.shop_animals_section .path a:hover {
+  color: #f17855 !important;
+}
 .shop_animals_section .line {
   border-radius: 6px;
   overflow: hidden;
@@ -1197,6 +1261,462 @@ footer .footer_bottom .social_media a i {
     margin-top: 20px;
   }
 }
+.pet_details_section .line {
+  -webkit-box-shadow: 1px 7px 10px #e2e2e2;
+          box-shadow: 1px 7px 10px #e2e2e2;
+  padding: 22px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.pet_details_section .line .text .type {
+  padding: 1px 10px;
+  background-color: #0052b1;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-right: auto;
+}
+.pet_details_section .line .text .title {
+  font-weight: 700;
+  font-size: 35px;
+}
+.pet_details_section .line .text .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+.pet_details_section .line .text .details > div i {
+  font-size: 17px;
+  color: #f17855;
+}
+.pet_details_section .line .text .details > div span {
+  font-size: 16px;
+  color: gray;
+}
+.pet_details_section .line .text .desc {
+  font-size: 17px;
+  color: gray;
+}
+.pet_details_section .line .text .more_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+.pet_details_section .line .text .more_details .item i {
+  font-size: 17px;
+  color: #0052b1;
+}
+.pet_details_section .line .text .more_details .item span {
+  font-size: 16px;
+}
+.pet_details_section .line .text .price {
+  font-size: 35px;
+  font-weight: 700;
+  color: #f17855;
+}
+.pet_details_section .line .text .price_range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.pet_details_section .line .text .price_range .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #f17855;
+  font-weight: 600;
+}
+.pet_details_section .line .text .price_range .item span {
+  color: gray;
+}
+.pet_details_section .line .text .btn_contact {
+  margin-bottom: 20px;
+}
+.pet_details_section .line .text .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pet_details_section .line .text .bottom .views span {
+  color: gray;
+}
+.pet_details_section .line .main_images {
+  position: relative;
+}
+.pet_details_section .line .main_images .image_main img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgb(222, 222, 222);
+}
+.pet_details_section .line .main_images .owl-nav button {
+  width: 35px;
+  height: 35px;
+  background-color: #f17855;
+  color: white;
+  border-radius: 50%;
+}
+.pet_details_section .line .main_images .owl-nav button span {
+  font-size: 33px;
+  line-height: 25px;
+}
+.pet_details_section .line .main_images .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.pet_details_section .line .main_images .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.pet_details_section .line .main_images .owl-dots {
+  display: none;
+}
+.pet_details_section .line .main_images .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-top: 12px;
+}
+.pet_details_section .line .main_images .images img {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgb(215, 215, 215);
+}
+.pet_details_section .line .main_images .images img.active {
+  border: 2px solid #f17855;
+}
+.pet_details_section .reviews_section {
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+.pet_details_section .reviews_section .title_section {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.pet_details_section .reviews_section .reviews .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.pet_details_section .reviews_section .reviews .review:not(:last-child) {
+  margin-bottom: 20px;
+}
+.pet_details_section .reviews_section .reviews .review .image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.pet_details_section .reviews_section .reviews .review .text .rate i {
+  color: gray;
+}
+.pet_details_section .reviews_section .reviews .review .text .rate i.active {
+  color: #fc0;
+}
+.pet_details_section .reviews_section .reviews .review .text .comment {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.pet_details_section .reviews_section .review_form {
+  margin-top: 30px;
+}
+.pet_details_section .reviews_section .review_form .title_section {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.pet_details_section .reviews_section .review_form .desc {
+  color: gray;
+}
+.pet_details_section .reviews_section .review_form form .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars i,
+.pet_details_section .reviews_section .review_form form .rate .rate_stars i:hover ~ i {
+  color: rgb(179, 179, 179);
+  text-shadow: none;
+  -webkit-transition: color 200ms, text-shadow 200ms;
+  transition: color 200ms, text-shadow 200ms;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i {
+  color: #fc0;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(2) {
+  -webkit-transition-delay: 30ms;
+          transition-delay: 30ms;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(3) {
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(4) {
+  -webkit-transition-delay: 90ms;
+          transition-delay: 90ms;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(5) {
+  -webkit-transition-delay: 120ms;
+          transition-delay: 120ms;
+}
+.pet_details_section .reviews_section .review_form form .rate .rate_stars i {
+  cursor: pointer;
+  font-style: normal;
+}
+.pet_details_section .reviews_section .review_form form .rate span {
+  color: gray;
+}
+.pet_details_section .reviews_section .review_form form .input_item {
+  margin-bottom: 15px;
+}
+.pet_details_section .reviews_section .review_form form .input_item textarea {
+  height: 120px;
+}
+.pet_details_section .reviews_section .review_form form .input_item textarea,
+.pet_details_section .reviews_section .review_form form .input_item input {
+  background-color: rgb(246, 246, 246);
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+.pet_details_section .reviews_section .review_form form .btn_submit {
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 8px 20px;
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .pet_details_section .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 15px;
+  }
+  .pet_details_section .line .text .title {
+    font-size: 26px;
+  }
+  .pet_details_section .line .text .details {
+    margin-bottom: 8px;
+  }
+  .pet_details_section .line .text .details > div i {
+    font-size: 15px;
+  }
+  .pet_details_section .line .text .details > div span {
+    font-size: 14px;
+  }
+  .pet_details_section .line .text .desc {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .pet_details_section .line .text .more_details {
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  .pet_details_section .line .text .price {
+    font-size: 28px;
+  }
+  .pet_details_section .line .text .bottom .views i {
+    font-size: 15px;
+  }
+  .pet_details_section .line .text .bottom .views span {
+    font-size: 14px;
+  }
+  .pet_details_section .line .main_images .image_main img {
+    height: 280px;
+  }
+  .pet_details_section .line .main_images .images {
+    gap: 8px;
+  }
+  .pet_details_section .line .main_images .images img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.related_ads_section .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.related_ads_section .head .title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.related_ads_section .head .btn_more {
+  color: #f17855 !important;
+  font-size: 18px;
+}
+.related_ads_section .boxs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.related_ads_section .boxs .box {
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.related_ads_section .boxs .box .badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 10px;
+  background-color: #0052b1;
+  color: white;
+  border-radius: 4px;
+}
+.related_ads_section .boxs .box .favorite {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #f17855;
+  font-size: 24px;
+}
+.related_ads_section .boxs .box .image img {
+  width: 100%;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.related_ads_section .boxs .box .content {
+  padding: 12px;
+}
+.related_ads_section .boxs .box .content .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.related_ads_section .boxs .box .content .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+.related_ads_section .boxs .box .content .details > div i {
+  font-size: 15px;
+  color: #f17855;
+}
+.related_ads_section .boxs .box .content .details > div span {
+  font-size: 14px;
+  color: gray;
+}
+.related_ads_section .boxs .box .content .views span {
+  color: gray;
+}
+.related_ads_section .boxs .box .content .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.related_ads_section .boxs .box .content .bottom .type {
+  color: #0052b1;
+}
+.related_ads_section .boxs .box .content .bottom .price {
+  font-weight: 700;
+  color: #f17855;
+}
+
+@media (max-width: 768px) {
+  .related_ads_section .head .title {
+    font-size: 22px;
+  }
+  .related_ads_section .head .btn_more {
+    font-size: 14px;
+  }
+  .related_ads_section .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -1247,13 +1767,19 @@ main {
 }
 
 .btn_outline {
-  padding: 5px 20px;
+  padding: 4px 20px;
   color: #f17855 !important;
   background-color: transparent;
-  border: 1px solid #f17855;
+  border: 1px solid #f17855 !important;
   color: white;
   border-radius: 50px;
   border: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn_outline:hover {
+  background-color: #f17855;
+  color: white !important;
 }
 
 .section {

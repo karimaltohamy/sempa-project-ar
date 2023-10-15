@@ -187,6 +187,9 @@
 
   .reviews_section {
     max-width: 900px;
+    background: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
     margin: 30px auto 0;
 
     .title_section {
@@ -199,6 +202,9 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
 
         &:not(:last-child) {
           margin-bottom: 20px;
@@ -231,89 +237,12 @@
       }
     }
 
-    .review_form {
-      margin-top: 30px;
+    .container_btn {
+      margin-top: 20px;
+      text-align: center;
 
-      .title_section {
-        font-weight: 700;
-        margin-bottom: 5px;
-      }
-
-      .desc {
-        color: gray;
-      }
-
-      form {
-        .rate {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          margin-bottom: 20px;
-
-          .rate_stars i,
-          .rate_stars i:hover ~ i {
-            color: rgb(179, 179, 179);
-            text-shadow: none;
-            transition: color 200ms, text-shadow 200ms;
-            transition-delay: 0;
-          }
-          .rate_stars:hover i {
-            color: #fc0;
-          }
-          .rate_stars:hover i:nth-child(2) {
-            transition-delay: 30ms;
-          }
-
-          .rate_stars:hover i:nth-child(3) {
-            transition-delay: 60ms;
-          }
-
-          .rate_stars:hover i:nth-child(4) {
-            transition-delay: 90ms;
-          }
-
-          .rate_stars:hover i:nth-child(5) {
-            transition-delay: 120ms;
-          }
-
-          .rate_stars i {
-            cursor: pointer;
-            font-style: normal;
-          }
-
-          span {
-            color: gray;
-          }
-        }
-
-        .input_item {
-          margin-bottom: 15px;
-
-          textarea {
-            height: 120px;
-          }
-
-          textarea,
-          input {
-            background-color: rgb(246 246 246);
-            border: 1px solid rgb(206, 206, 206);
-            border-radius: 4px;
-            padding: 8px;
-            width: 100%;
-            outline: none;
-          }
-        }
-
-        .btn_submit {
-          margin-top: 20px;
-          font-size: 17px;
-          padding: 8px 20px;
-          width: 100%;
-          border-radius: 50px;
-          color: white;
-          background-color: black;
-          border: none;
-        }
+      .btn_evaluation {
+        padding: 5px 50px;
       }
     }
   }
@@ -393,6 +322,7 @@
 
 // start related_ads_section
 .related_ads_section {
+  padding: 20px 0 !important;
   .head {
     display: flex;
     align-items: center;

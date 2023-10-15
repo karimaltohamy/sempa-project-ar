@@ -432,6 +432,197 @@ footer .footer_bottom .social_media a i {
   cursor: pointer;
 }
 
+.evaluation-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+.evaluation-box.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.evaluation-box .content {
+  background-color: white;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+.evaluation-box .content .close-evaluation {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.evaluation-box .content h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.evaluation-box .content .evaluation-lines .evaluation-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 20px;
+  gap: 10px;
+  border: 2px solid rgb(200, 200, 200);
+  margin-bottom: 15px;
+  border-radius: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.evaluation-box .content .evaluation-lines .evaluation-line:hover {
+  border-color: #f17855;
+}
+.evaluation-box .content .evaluation-lines .evaluation-line svg {
+  width: 25px;
+}
+.evaluation-box .content .evaluation-lines .evaluation-line .solid-star {
+  color: #ffb400;
+}
+.evaluation-box .content .evaluation-lines .evaluation-line .outline-star {
+  color: gray;
+}
+.evaluation-box.active-evaluation-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-evaluition {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.438);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+.comment-evaluition.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.comment-evaluition .content {
+  background-color: white;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+.comment-evaluition .content .close-comment-evaluation {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.comment-evaluition .content h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.comment-evaluition .content .evaluation-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.comment-evaluition .content .evaluation-line svg {
+  width: 25px;
+}
+.comment-evaluition .content .evaluation-line .solid-star {
+  color: #ffb400;
+}
+.comment-evaluition .content .evaluation-line .outline-star {
+  color: rgba(0, 0, 0, 0.231372549);
+}
+.comment-evaluition .content .write-comment {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #b8b8b8;
+  border-radius: 5px;
+  resize: none;
+  padding: 15px;
+  font-size: 17px;
+}
+.comment-evaluition .content .btns-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-evaluition .content .btns-comment a {
+  width: 49%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.comment-evaluition .content .btns-comment a svg {
+  width: 20px;
+}
+.comment-evaluition .content .btns-comment .solid {
+  background-color: #f17855;
+  color: white !important;
+}
+.comment-evaluition .content .btns-comment .outline {
+  border: 1px solid #b8b8b8;
+  color: black;
+}
+.comment-evaluition.active-comment-evaluition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hero_section {
   height: calc(100vh - 107px);
 }
@@ -1220,7 +1411,7 @@ footer .footer_bottom .social_media a i {
   padding: 0;
 }
 .shop_animals_section .line .filter form .input_item input {
-  width: 35px;
+  width: 125px;
 }
 .shop_animals_section .line .filter form .input_item i {
   color: #f17855;
@@ -1532,6 +1723,9 @@ footer .footer_bottom .social_media a i {
 }
 .pet_details_section .reviews_section {
   max-width: 900px;
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
   margin: 30px auto 0;
 }
 .pet_details_section .reviews_section .title_section {
@@ -1546,6 +1740,9 @@ footer .footer_bottom .social_media a i {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 .pet_details_section .reviews_section .reviews .review:not(:last-child) {
   margin-bottom: 20px;
@@ -1565,85 +1762,12 @@ footer .footer_bottom .social_media a i {
   margin-bottom: 0;
   font-weight: 500;
 }
-.pet_details_section .reviews_section .review_form {
-  margin-top: 30px;
-}
-.pet_details_section .reviews_section .review_form .title_section {
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.pet_details_section .reviews_section .review_form .desc {
-  color: gray;
-}
-.pet_details_section .reviews_section .review_form form .rate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars i,
-.pet_details_section .reviews_section .review_form form .rate .rate_stars i:hover ~ i {
-  color: rgb(179, 179, 179);
-  text-shadow: none;
-  -webkit-transition: color 200ms, text-shadow 200ms;
-  transition: color 200ms, text-shadow 200ms;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i {
-  color: #fc0;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(2) {
-  -webkit-transition-delay: 30ms;
-          transition-delay: 30ms;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(3) {
-  -webkit-transition-delay: 60ms;
-          transition-delay: 60ms;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(4) {
-  -webkit-transition-delay: 90ms;
-          transition-delay: 90ms;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars:hover i:nth-child(5) {
-  -webkit-transition-delay: 120ms;
-          transition-delay: 120ms;
-}
-.pet_details_section .reviews_section .review_form form .rate .rate_stars i {
-  cursor: pointer;
-  font-style: normal;
-}
-.pet_details_section .reviews_section .review_form form .rate span {
-  color: gray;
-}
-.pet_details_section .reviews_section .review_form form .input_item {
-  margin-bottom: 15px;
-}
-.pet_details_section .reviews_section .review_form form .input_item textarea {
-  height: 120px;
-}
-.pet_details_section .reviews_section .review_form form .input_item textarea,
-.pet_details_section .reviews_section .review_form form .input_item input {
-  background-color: rgb(246, 246, 246);
-  border: 1px solid rgb(206, 206, 206);
-  border-radius: 4px;
-  padding: 8px;
-  width: 100%;
-  outline: none;
-}
-.pet_details_section .reviews_section .review_form form .btn_submit {
+.pet_details_section .reviews_section .container_btn {
   margin-top: 20px;
-  font-size: 17px;
-  padding: 8px 20px;
-  width: 100%;
-  border-radius: 50px;
-  color: white;
-  background-color: black;
-  border: none;
+  text-align: center;
+}
+.pet_details_section .reviews_section .container_btn .btn_evaluation {
+  padding: 5px 50px;
 }
 
 @media (max-width: 768px) {
@@ -1693,6 +1817,9 @@ footer .footer_bottom .social_media a i {
     width: 60px;
     height: 60px;
   }
+}
+.related_ads_section {
+  padding: 20px 0 !important;
 }
 .related_ads_section .head {
   display: -webkit-box;

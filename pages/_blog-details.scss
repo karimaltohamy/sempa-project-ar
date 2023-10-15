@@ -1,0 +1,130 @@
+@import "../components/variables";
+
+// start blog details
+.blog_details_section {
+  max-width: 1200px;
+  margin: auto;
+
+  .content {
+    .title {
+      text-align: center;
+      font-weight: 700;
+      max-width: 600px;
+      font-size: 35px;
+      margin: 0 auto 10px;
+    }
+
+    .details {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 20px;
+
+      .date {
+        color: gray;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .profile {
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+
+        span {
+          color: gray;
+        }
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 1px solid rgb(222, 222, 222);
+      }
+    }
+
+    .text {
+      padding-top: 20px;
+      max-width: 800px;
+      margin: auto;
+
+      h4 {
+        font-weight: 600;
+      }
+
+      .desc {
+        line-height: 1.7;
+        color: rgb(115, 115, 115);
+      }
+
+      .img {
+        img {
+          height: 400px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+          border: 1px solid rgb(222, 222, 222);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog_details_section {
+    .content {
+      .title {
+        font-size: 23px;
+      }
+
+      .details {
+        gap: 12px;
+        margin-bottom: 10px;
+
+        .date {
+          font-size: 14px;
+        }
+
+        .profile {
+          img {
+            width: 30px;
+            height: 30px;
+          }
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .image {
+        img {
+          height: 300px;
+        }
+      }
+
+      .text {
+        padding-top: 10px;
+
+        .desc {
+          margin-bottom: 10px;
+        }
+
+        .img {
+          img {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+// end blog details

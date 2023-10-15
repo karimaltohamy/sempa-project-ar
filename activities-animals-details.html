@@ -88,7 +88,7 @@
           <div class="links">
             <a href="index.html" class="link">الرئيسيه</a>
             <div class="list_Links">
-              <a href="#" class="link active"> حيوانات </a>
+              <a href="#" class="link"> حيوانات </a>
               <div class="list">
                 <li>
                   <a href="course-details.html" class="list_link">بيع و شراء</a>
@@ -108,9 +108,7 @@
                   >
                 </li>
                 <li>
-                  <a href="animal-training.html" class="list_link active">
-                    تدريب</a
-                  >
+                  <a href="animal-training.html" class="list_link"> تدريب</a>
                 </li>
                 <li>
                   <a href="animal-supplies.html" class="list_link">
@@ -119,7 +117,7 @@
                 </li>
               </div>
             </div>
-            <a href="activities-animals.html" class="link">النشاطات</a>
+            <a href="activities-animals.html" class="link active">النشاطات</a>
             <a href="pharmacies.html" class="link">الصيدلايات</a>
             <a href="clinics.html" class="link">العيادات</a>
             <a href="sociales.html" class="link">السوشيال</a>
@@ -160,8 +158,8 @@
       <div class="container">
         <div class="line line_section">
           <div class="text">
-            <span class="type"> تدريب </span>
-            <h3 class="title">تدريب حيوانك باسرع وقت</h3>
+            <span class="type"> نشاط</span>
+            <h3 class="title">نشاط لحيوانك باسرع وقت</h3>
             <div class="details">
               <div class="location">
                 <i class="fa-solid fa-location-dot"></i>
@@ -169,7 +167,7 @@
               </div>
               <div class="date">
                 <i class="fa-regular fa-calendar-days"></i>
-                <span>5 اكتوبر</span>
+                <span>5 اكتوبر 2023</span>
               </div>
             </div>
             <p class="desc">
@@ -194,10 +192,16 @@
                 <span>225 عدد المشاهدات</span>
               </div>
 
-              <button class="btn_fill btn_favorite">
-                <i class="fa-regular fa-heart"></i>
-                <span>اضافه الي المفضله</span>
-              </button>
+              <div class="d-flex align-items-center gap-3">
+                <button class="btn_outline btn_booking">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <span>احجز الان</span>
+                </button>
+                <button class="btn_fill btn_favorite">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>اضافه الي المفضله</span>
+                </button>
+              </div>
             </div>
           </div>
           <div class="main_images">
@@ -507,6 +511,35 @@
     </footer>
     <!-- end footer -->
 
+    <!-- start popup booking -->
+    <div class="popup_box popup_booking">
+      <div class="content">
+        <div class="head">
+          <h3>أحجز الان</h3>
+          <i class="fa-solid fa-xmark close_booking"></i>
+        </div>
+
+        <div class="form">
+          <div class="input_item">
+            <label for="name">الاسم</label>
+            <input id="name" type="text" />
+          </div>
+          <div class="input_item">
+            <label for="number">رقم الموبيل</label>
+            <input id="number" type="number" />
+          </div>
+          <div class="input_item">
+            <label for="type-animal">نوع الحيوان</label>
+            <input id="type-animal" type="text" />
+          </div>
+          <div class="container-btn">
+            <button class="btn_booking_now">احجز الان</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup reporting -->
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
       integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -532,6 +565,19 @@
         "click",
         () => (btnContactUser.children[1].innerHTML = "010054689")
       );
+
+      //   popup booking
+      const btnBooking = document.querySelector(".btn_booking");
+      const popupBooking = document.querySelector(".popup_booking");
+      const closeBooking = document.querySelector(".close_booking");
+
+      btnBooking.addEventListener("click", () => {
+        popupBooking.classList.add("active");
+      });
+
+      closeBooking.addEventListener("click", () => {
+        popupBooking.classList.remove("active");
+      });
     </script>
   </body>
 </html>

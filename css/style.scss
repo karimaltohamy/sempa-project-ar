@@ -1,8 +1,11 @@
 @use "../components/header";
 @use "../components/footer";
+@use "../components/popup";
 @use "../pages/index";
 @use "../pages/pets";
 @use "../pages/pet-details";
+@use "../pages/blog";
+@use "../pages/blog-details";
 
 @import "../components/variables";
 

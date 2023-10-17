@@ -1,0 +1,114 @@
+@import "../components/variables";
+
+// start sign_section
+.sign_section {
+  padding: 70px 10px;
+  background-color: rgb(238 238 238);
+
+  .content {
+    padding: 35px;
+    background-color: white;
+    border-radius: 6px;
+    max-width: 500px;
+    box-shadow: 0 0 10px #d1d1d1;
+    margin: auto;
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+
+    form {
+      .input_item {
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+
+        label {
+          font-size: 17px;
+          font-weight: 700;
+          display: block;
+        }
+
+        input,
+        select {
+          padding: 5px;
+          border: 1px solid rgb(194, 194, 194);
+          border-radius: 5px;
+          outline: none;
+          width: 100%;
+        }
+      }
+
+      .btn_submit {
+        padding: 5px 30px;
+        width: 100%;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .path {
+        margin-top: 12px;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 600;
+
+        a {
+          color: $primary-color !important;
+        }
+      }
+
+      .authors_accounts {
+        padding-top: 15px;
+        border-top: 1px solid rgb(215, 215, 215);
+
+        h6 {
+          margin-bottom: 12px;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          width: 100%;
+          border-radius: 5px;
+
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sign_section {
+    padding: 45px 10px;
+
+    .content {
+      padding: 15px;
+
+      .title {
+        font-size: 23px;
+      }
+
+      form {
+        .input_item {
+          label {
+            font-size: 15px;
+          }
+
+          input {
+            padding: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+// end sign_section

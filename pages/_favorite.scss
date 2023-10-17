@@ -1,0 +1,154 @@
+@import "../components/variables";
+
+// start head_favorite
+.favorite_section {
+  .head_favorite {
+    background-color: rgb(244 244 244);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+
+      .link {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 12px;
+        font-weight: 700;
+        cursor: pointer;
+
+        &.active {
+          border-bottom: 2px solid $primary-color;
+          background-color: #f9d7cd;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .section {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .animals_section,
+  .services_animals_section,
+  .clinics_animals_section,
+  .pharmacies_animals_section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(244 244 244);
+
+    .boxs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+
+      .box {
+        border: 1px solid rgb(227 227 227);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        .badge {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          padding: 6px 10px;
+          background-color: #0052b1;
+          color: white;
+          border-radius: 4px;
+        }
+
+        .favorite {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          color: $primary-color;
+          font-size: 24px;
+        }
+
+        .image {
+          img {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+          }
+        }
+
+        .content {
+          padding: 12px;
+
+          .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+          }
+
+          .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+
+            > div {
+              i {
+                font-size: 15px;
+                color: $primary-color;
+              }
+
+              span {
+                font-size: 14px;
+                color: gray;
+              }
+            }
+          }
+
+          .views {
+            span {
+              color: gray;
+            }
+          }
+
+          .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .type {
+              color: #0052b1;
+            }
+
+            .price,
+            .date {
+              font-weight: 700;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .favorite_section {
+    .animals_section,
+    .services_animals_section,
+    .clinics_animals_section,
+    .pharmacies_animals_section {
+      padding: 12px;
+    }
+  }
+}
+// end head_favorite

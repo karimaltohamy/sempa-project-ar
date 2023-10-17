@@ -1,0 +1,89 @@
+@import "../components/variables";
+
+.add_pets_section {
+  padding: 70px 10px;
+  background-color: rgb(238 238 238);
+
+  .content {
+    padding: 35px;
+    background-color: white;
+    border-radius: 6px;
+    max-width: 500px;
+    box-shadow: 0 0 10px #d1d1d1;
+    margin: auto;
+
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+
+    form {
+      .input_item {
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        label {
+          font-size: 17px;
+          font-weight: 700;
+          display: block;
+        }
+
+        input,
+        select,
+        textarea {
+          padding: 5px;
+          border: 1px solid rgb(194, 194, 194);
+          border-radius: 5px;
+          outline: none;
+          width: 100%;
+          font-size: 15px;
+        }
+
+        select {
+          font-size: 12px;
+        }
+      }
+
+      .input_file {
+        margin-bottom: 12px;
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid rgb(212, 212, 212);
+          padding: 5px;
+          border-radius: 5px;
+
+          span {
+            font-weight: 700;
+          }
+
+          i {
+            font-size: 22px;
+            color: $primary-color;
+          }
+        }
+      }
+
+      .checks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .btn_submit {
+        padding: 5px 30px;
+        width: 100%;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+  }
+}

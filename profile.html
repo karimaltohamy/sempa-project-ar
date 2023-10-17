@@ -14,6 +14,7 @@
     />
     <!-- bootstarp -->
     <link rel="stylesheet" href="css/bootstrap.css" />
+
     <script src="js/bootstrap.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -81,6 +82,7 @@
       </div>
     </div>
     <!-- end mini header -->
+
     <!-- start header -->
     <header class="dark">
       <div class="container">
@@ -106,7 +108,7 @@
                   <a href="mating-animal.html" class="list_link"> تزاوج</a>
                 </li>
                 <li>
-                  <a href="veterinary-services.html" class="list_link">
+                  <a href="course-details.html" class="list_link">
                     خدمات بيطريه</a
                   >
                 </li>
@@ -114,7 +116,7 @@
                   <a href="animal-training.html" class="list_link"> تدريب</a>
                 </li>
                 <li>
-                  <a href="animal-supplies.html" class="list_link">
+                  <a href="course-details.html" class="list_link">
                     مستلزمات الحيوان</a
                   >
                 </li>
@@ -122,7 +124,7 @@
             </div>
             <a href="activities-animals.html" class="link">النشاطات</a>
             <a href="pharmacies.html" class="link">الصيدلايات</a>
-            <a href="clinics.html" class="link active">العيادات</a>
+            <a href="clinics.html" class="link">العيادات</a>
             <a href="sociales.html" class="link">السوشيال</a>
             <a href="blog.html" class="link">المقالات</a>
             <a href="rescue-services.html" class="link">خدمه الانقاذ</a>
@@ -130,6 +132,37 @@
           <div class="info">
             <a href="login.html" class="btn_fill"> تسجيل الدخول </a>
             <a href="register.html" class="btn_outline"> أنشاء حساب</a>
+            <div class="dropdown dropdown_profile">
+              <button
+                class="img_profile"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./images/avatar1.png" alt="avatar" loading="lazy" />
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>حسابي</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="favorite.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>المفضله</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item btn_logout" href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>تسجيل الدخول</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <div class="dropdown dropdown_profile">
               <button
@@ -233,63 +266,87 @@
     </div>
     <!-- end menu mobile -->
 
-    <!-- start shop animals -->
-    <div class="shop_animals_section section">
+    <!-- start profile section -->
+    <div class="profile_section switch_sections section">
       <div class="container">
-        <div class="path">
-          <a href="index.html">الرئيسيه</a>
-          <i class="fa-solid fa-chevron-left"></i>
-          <a href="clinics.html"> العيادات </a>
+        <div class="head_profile head_switchs">
+          <div class="links">
+            <div class="link active" data-num="1">
+              <span class="">بيناتي الشخصيه</span>
+            </div>
+            <div class="link" data-num="2">
+              <span>حيوناتي</span>
+            </div>
+            <div class="link" data-num="3">
+              <span>بياناتي الشخصيه</span>
+            </div>
+          </div>
         </div>
-        <div class="line">
-          <div class="filter">
-            <form action="">
-              <div class="buttons_filter">
-                <button class="btn_filter active">معروض</button>
-                <button class="btn_fillter">مطلوب</button>
-              </div>
-              <div class="input_item">
-                <label for="">ترتيب الاحداث</label>
-                <select name="" id="">
-                  <option value="">الاحدث</option>
-                  <option value="">الاقدم</option>
-                </select>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="input_item">
-                <label for="">الاسم</label>
-                <input type="number" value="0" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="input_item">
-                <label for="">التاريخ</label>
-                <div class="input">
-                  <span>من</span>
-                  <input type="number" value="0" />
+        <div class="profile_form_details section active" data-num="1">
+          <form action="">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">الاسم الاول</label>
+                  <input type="text" />
                 </div>
-                <div class="input">
-                  <span>الي</span>
-                  <input type="number" value="0" />
-                </div>
-                <i class="fa-solid fa-magnifying-glass"></i>
               </div>
-            </form>
-          </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">الاسم الأخير</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">البريد الإلكتروني</label>
+                  <input type="email" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">رقم الموبيل</label>
+                  <input type="number" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">تاريخ الميلاد</label>
+                  <input type="date" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">الدولة</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">الوصف</label>
+                  <textarea name="" id=""></textarea>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn_submit">حفظ</button>
+          </form>
+        </div>
+
+        <div class="my_animals_section section" data-num="2">
           <div class="boxs">
-            <a href="clinics-details.html" class="box">
+            <a href="pet-details.html" class="box">
               <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
+
               <div class="image">
                 <img
-                  src="./images/host-animal2.jpg"
-                  alt="host-animal"
+                  src="./images/animal-img2.jpg"
+                  alt="animal-img"
                   loading="lazy"
                 />
               </div>
               <div class="content">
-                <h4 class="title">عياده لحيوانك باسرع وقت</h4>
+                <h4 class="title">قطط للبيع باسرع وقت</h4>
                 <div class="details">
                   <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -305,25 +362,23 @@
                   <span>225 عدد المشاهدات</span>
                 </div>
                 <div class="bottom">
-                  <span class="type">عياده</span>
+                  <span class="type">بيع</span>
                   <h5 class="price">2,500.00 ج.م</h5>
                 </div>
               </div>
             </a>
-            <a href="clinics-details.html" class="box">
+            <a href="pet-details.html" class="box">
               <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
+
               <div class="image">
                 <img
-                  src="./images/host-animal3.jpg"
-                  alt="host-animal"
+                  src="./images/animal-img3.jpg"
+                  alt="animal-img"
                   loading="lazy"
                 />
               </div>
               <div class="content">
-                <h4 class="title">عياده لحيوانك باسرع وقت</h4>
+                <h4 class="title">قطط للبيع باسرع وقت</h4>
                 <div class="details">
                   <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -339,25 +394,23 @@
                   <span>225 عدد المشاهدات</span>
                 </div>
                 <div class="bottom">
-                  <span class="type">عياده</span>
+                  <span class="type">بيع</span>
                   <h5 class="price">2,500.00 ج.م</h5>
                 </div>
               </div>
             </a>
-            <a href="clinics-details.html" class="box">
+            <a href="pet-details.html" class="box">
               <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
+
               <div class="image">
                 <img
-                  src="./images/host-animal.jpg"
-                  alt="host-animal"
+                  src="./images/animal-img.jpg"
+                  alt="animal-img"
                   loading="lazy"
                 />
               </div>
               <div class="content">
-                <h4 class="title">عياده لحيوانك باسرع وقت</h4>
+                <h4 class="title">قطط للبيع باسرع وقت</h4>
                 <div class="details">
                   <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -373,25 +426,23 @@
                   <span>225 عدد المشاهدات</span>
                 </div>
                 <div class="bottom">
-                  <span class="type">عياده</span>
+                  <span class="type">بيع</span>
                   <h5 class="price">2,500.00 ج.م</h5>
                 </div>
               </div>
             </a>
-            <a href="clinics-details.html" class="box">
+            <a href="pet-details.html" class="box">
               <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
+
               <div class="image">
                 <img
-                  src="./images/host-animal2.jpg"
-                  alt="host-animal"
+                  src="./images/animal-img2.jpg"
+                  alt="animal-img"
                   loading="lazy"
                 />
               </div>
               <div class="content">
-                <h4 class="title">عياده لحيوانك باسرع وقت</h4>
+                <h4 class="title">قطط للبيع باسرع وقت</h4>
                 <div class="details">
                   <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -407,25 +458,23 @@
                   <span>225 عدد المشاهدات</span>
                 </div>
                 <div class="bottom">
-                  <span class="type">عياده</span>
+                  <span class="type">بيع</span>
                   <h5 class="price">2,500.00 ج.م</h5>
                 </div>
               </div>
             </a>
-            <a href="clinics-details.html" class="box">
+            <a href="pet-details.html" class="box">
               <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
+
               <div class="image">
                 <img
-                  src="./images/host-animal3.jpg"
-                  alt="host-animal"
+                  src="./images/animal-img3.jpg"
+                  alt="animal-img"
                   loading="lazy"
                 />
               </div>
               <div class="content">
-                <h4 class="title">عياده لحيوانك باسرع وقت</h4>
+                <h4 class="title">قطط للبيع باسرع وقت</h4>
                 <div class="details">
                   <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -441,25 +490,23 @@
                   <span>225 عدد المشاهدات</span>
                 </div>
                 <div class="bottom">
-                  <span class="type">عياده</span>
+                  <span class="type">بيع</span>
                   <h5 class="price">2,500.00 ج.م</h5>
                 </div>
               </div>
             </a>
-            <a href="clinics-details.html" class="box">
+            <a href="pet-details.html" class="box">
               <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
+
               <div class="image">
                 <img
-                  src="./images/host-animal.jpg"
-                  alt="host-animal"
+                  src="./images/animal-img.jpg"
+                  alt="animal-img"
                   loading="lazy"
                 />
               </div>
               <div class="content">
-                <h4 class="title">عياده لحيوانك باسرع وقت</h4>
+                <h4 class="title">قطط للبيع باسرع وقت</h4>
                 <div class="details">
                   <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -475,16 +522,43 @@
                   <span>225 عدد المشاهدات</span>
                 </div>
                 <div class="bottom">
-                  <span class="type">عياده</span>
+                  <span class="type">بيع</span>
                   <h5 class="price">2,500.00 ج.م</h5>
                 </div>
               </div>
             </a>
           </div>
+        </div>
+
+        <div class="change_passwod_section section" data-num="3">
+          <form action="">
+            <div class="row">
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">كلمة المرور القديمة</label>
+                  <input type="password" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">كلمة المرور الجديدة</label>
+                  <input type="password" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">تأكييد كلمة المرور الجديدة</label>
+                  <input type="password" />
+                </div>
+              </div>
+            </div>
+
+            <button class="btn_submit">حفظ</button>
+          </form>
         </div>
       </div>
     </div>
-    <!-- end shop animals -->
+    <!-- end profile section -->
 
     <!-- start footer -->
     <footer>
@@ -552,6 +626,9 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <script src="js/switchSections.js"></script>
+    <script src="js/switchSections.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

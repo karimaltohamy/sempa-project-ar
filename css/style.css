@@ -1164,6 +1164,9 @@ footer .footer_bottom .social_media a i {
   width: 80px;
   fill: black;
 }
+.our_services .boxs .box .icon img {
+  width: 80px;
+}
 .our_services .boxs .box h4 {
   margin-bottom: 0;
 }

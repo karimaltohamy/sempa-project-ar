@@ -20,6 +20,10 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+    />
   </head>
   <body>
     <!-- start mini header -->
@@ -233,254 +237,121 @@
     </div>
     <!-- end menu mobile -->
 
-    <!-- start shop animals -->
-    <div class="shop_animals_section section">
+    <!-- start hero activities -->
+    <div class="hero_activities">
       <div class="container">
-        <div class="path">
-          <a href="index.html">الرئيسيه</a>
-          <i class="fa-solid fa-chevron-left"></i>
-          <a href="activities-animals.html"> النشاطات</a>
+        <div class="line line_section">
+          <div class="text">
+            <h2 class="title">نادي سباقات الخيل</h2>
+            <p class="desc">
+              يقوم بإجراء سباقات للخيل المهجنة الأصيلة في موقعين للسباق في
+              مدينتي الرياض على ميدان الملك عبدالعزيز والطائف على ميدان الملك
+              خالد. تم إنشاء النادي في عام 1965 (1385 هجري) تحت رئاسة خادم
+              الحرمين الشريفين الملك عبدالله بن عبدالعزيز (يرحمه الله) عندما كان
+              ولياً للعهد آنذاك وكان حريص على دعم فرسان الوطن بالكؤوس الذهبية
+            </p>
+          </div>
+          <div class="images">
+            <div class="items_image row">
+              <div class="item col-6">
+                <img
+                  src="./images/image-hero-activities.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="item col-6">
+                <img
+                  src="./images/image-hero-activities2.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="item col-6">
+                <img
+                  src="./images/image-hero-activities3.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="item col-6">
+                <img
+                  src="./images/image-hero-activities4.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="line">
-          <div class="filter">
-            <form action="">
-              <div class="buttons_filter">
-                <button class="btn_filter active">معروض</button>
-                <button class="btn_fillter">مطلوب</button>
-              </div>
-              <div class="input_item">
-                <label for="">ترتيب الاحداث</label>
-                <select name="" id="">
-                  <option value="">الاحدث</option>
-                  <option value="">الاقدم</option>
-                </select>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="input_item">
-                <label for="">الاسم</label>
-                <input type="number" value="0" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="input_item">
-                <label for="">التاريخ</label>
-                <div class="input">
-                  <span>من</span>
-                  <input type="number" value="0" />
-                </div>
-                <div class="input">
-                  <span>الي</span>
-                  <input type="number" value="0" />
-                </div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-            </form>
-          </div>
-          <div class="boxs">
-            <a href="activities-animals-details.html" class="box">
-              <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              <div class="image">
-                <img
-                  src="./images/host-animal2.jpg"
-                  alt="host-animal"
-                  loading="lazy"
-                />
-              </div>
-              <div class="content">
-                <h4 class="title">نشاطات لحيوانك باسرع وقت</h4>
-                <div class="details">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>المويهات - عجمان - الإمارات</span>
-                  </div>
-                  <div class="date">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>5 اكتوبر</span>
-                  </div>
-                </div>
-                <div class="views">
-                  <i class="fa-regular fa-eye"></i>
-                  <span>225 عدد المشاهدات</span>
-                </div>
-                <div class="bottom">
-                  <span class="type">نشاط</span>
-                  <h5 class="price">2,500.00 ج.م</h5>
-                </div>
-              </div>
-            </a>
-            <a href="activities-animals-details.html" class="box">
-              <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              <div class="image">
-                <img
-                  src="./images/host-animal3.jpg"
-                  alt="host-animal"
-                  loading="lazy"
-                />
-              </div>
-              <div class="content">
-                <h4 class="title">نشاطات لحيوانك باسرع وقت</h4>
-                <div class="details">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>المويهات - عجمان - الإمارات</span>
-                  </div>
-                  <div class="date">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>5 اكتوبر</span>
-                  </div>
-                </div>
-                <div class="views">
-                  <i class="fa-regular fa-eye"></i>
-                  <span>225 عدد المشاهدات</span>
-                </div>
-                <div class="bottom">
-                  <span class="type">نشاط</span>
-                  <h5 class="price">2,500.00 ج.م</h5>
-                </div>
-              </div>
-            </a>
-            <a href="activities-animals-details.html" class="box">
-              <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              <div class="image">
-                <img
-                  src="./images/host-animal.jpg"
-                  alt="host-animal"
-                  loading="lazy"
-                />
-              </div>
-              <div class="content">
-                <h4 class="title">نشاطات لحيوانك باسرع وقت</h4>
-                <div class="details">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>المويهات - عجمان - الإمارات</span>
-                  </div>
-                  <div class="date">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>5 اكتوبر</span>
-                  </div>
-                </div>
-                <div class="views">
-                  <i class="fa-regular fa-eye"></i>
-                  <span>225 عدد المشاهدات</span>
-                </div>
-                <div class="bottom">
-                  <span class="type">نشاط</span>
-                  <h5 class="price">2,500.00 ج.م</h5>
-                </div>
-              </div>
-            </a>
-            <a href="activities-animals-details.html" class="box">
-              <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              <div class="image">
-                <img
-                  src="./images/host-animal2.jpg"
-                  alt="host-animal"
-                  loading="lazy"
-                />
-              </div>
-              <div class="content">
-                <h4 class="title">نشاطات لحيوانك باسرع وقت</h4>
-                <div class="details">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>المويهات - عجمان - الإمارات</span>
-                  </div>
-                  <div class="date">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>5 اكتوبر</span>
-                  </div>
-                </div>
-                <div class="views">
-                  <i class="fa-regular fa-eye"></i>
-                  <span>225 عدد المشاهدات</span>
-                </div>
-                <div class="bottom">
-                  <span class="type">نشاط</span>
-                  <h5 class="price">2,500.00 ج.م</h5>
-                </div>
-              </div>
-            </a>
-            <a href="activities-animals-details.html" class="box">
-              <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              <div class="image">
-                <img
-                  src="./images/host-animal3.jpg"
-                  alt="host-animal"
-                  loading="lazy"
-                />
-              </div>
-              <div class="content">
-                <h4 class="title">نشاطات لحيوانك باسرع وقت</h4>
-                <div class="details">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>المويهات - عجمان - الإمارات</span>
-                  </div>
-                  <div class="date">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>5 اكتوبر</span>
-                  </div>
-                </div>
-                <div class="views">
-                  <i class="fa-regular fa-eye"></i>
-                  <span>225 عدد المشاهدات</span>
-                </div>
-                <div class="bottom">
-                  <span class="type">نشاط</span>
-                  <h5 class="price">2,500.00 ج.م</h5>
-                </div>
-              </div>
-            </a>
-            <a href="activities-animals-details.html" class="box">
-              <span class="badge"> معروض </span>
-              <span class="favorite">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              <div class="image">
-                <img
-                  src="./images/host-animal.jpg"
-                  alt="host-animal"
-                  loading="lazy"
-                />
-              </div>
-              <div class="content">
-                <h4 class="title">نشاطات لحيوانك باسرع وقت</h4>
-                <div class="details">
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>المويهات - عجمان - الإمارات</span>
-                  </div>
-                  <div class="date">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>5 اكتوبر</span>
-                  </div>
-                </div>
-                <div class="views">
-                  <i class="fa-regular fa-eye"></i>
-                  <span>225 عدد المشاهدات</span>
-                </div>
-                <div class="bottom">
-                  <span class="type">نشاط</span>
-                  <h5 class="price">2,500.00 ج.م</h5>
-                </div>
-              </div>
-            </a>
-          </div>
+      </div>
+    </div>
+    <!-- end hero activities -->
+
+    <!-- start shop animals -->
+    <div class="table_activities">
+      <div class="container">
+        <div class="head d-flex align-items-center justify-content-between">
+          <h4 class="title">النشاطات</h4>
+
+          <button class="btn_publishing btn_fill">نشر اعلان</button>
+        </div>
+        <div class="container_table">
+          <table id="activities" class="display" style="width: 100%">
+            <thead>
+              <th>الاسم</th>
+              <th>عدد المشتركين</th>
+              <th>تاريخ البدء</th>
+              <th>تاريخ الانتهاء</th>
+              <th>احداث</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="activities-animals-details.html">لويس موراليس</a>
+                </td>
+                <td>130</td>
+                <td>June 20, 2023</td>
+                <td>June 30, 2023</td>
+                <td>
+                  <button class="btn_submit">تقديم</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="activities-animals-details.html">لويس موراليس</a>
+                </td>
+                <td>130</td>
+                <td>June 20, 2023</td>
+                <td>June 30, 2023</td>
+                <td>
+                  <button class="btn_submit">تقديم</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="activities-animals-details.html">لويس موراليس</a>
+                </td>
+                <td>130</td>
+                <td>June 20, 2023</td>
+                <td>June 30, 2023</td>
+                <td>
+                  <button class="btn_submit">تقديم</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="activities-animals-details.html">لويس موراليس</a>
+                </td>
+                <td>130</td>
+                <td>June 20, 2023</td>
+                <td>June 30, 2023</td>
+                <td>
+                  <button class="btn_submit">تقديم</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -552,6 +423,133 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- start popup publishing -->
+    <div class="popup_box popup_publishing">
+      <div class="content">
+        <div class="head">
+          <h3>نشر اعلان</h3>
+          <i class="fa-solid fa-xmark close_publishing"></i>
+        </div>
+
+        <div class="form">
+          <form action="">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">اسم النشاط</label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for=""> الدوله</label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for=""> المدينه</label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">العنوان</label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">السعر</label>
+                  <div class="input">
+                    <input id="" type="number" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for=""> عدد المشتركين</label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="appointments">
+                  <h6>المواعيد</h6>
+                  <div class="lines"></div>
+                  <button class="add_appointment">أضافه موعد</button>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="awards">
+                  <h6>الجوائز</h6>
+                  <div class="lines"></div>
+                  <button class="add_award">أضافه جائزه</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="add_images">
+                  <h5>صور النشاط</h5>
+                  <div class="input_file">
+                    <label for="images">
+                      <i class="fa-regular fa-image"></i>
+                    </label>
+                    <input type="file" class="d-none" id="images" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">شروط المسابقه</label>
+                  <textarea name="" id=""></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">الوصف</label>
+                  <textarea name="" id=""></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-btn">
+              <button class="btn_booking_now">نشر</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end popup publishing -->
+
+    <script src="js/selectFilter.js"></script>
+    <script src="js/activitiesInputs.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#activities").DataTable({
+          pagingType: "full_numbers",
+          scrollX: true,
+        });
+      });
+    </script>
   </body>
 </html>

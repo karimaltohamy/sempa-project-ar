@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sempa Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- start mini header -->
+    <div class="mini_header">
+      <div class="container">
+        <div class="line">
+          <div class="lang">
+            <img
+              class="lang"
+              src="images/Flag-United-States-of-America.webp"
+              alt="Flag-United-States-of-America"
+              loading="lazy"
+            />
+            <span>English</span>
+          </div>
+          <div class="contact_info">
+            <div class="item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
+              </svg>
+              <span> +123 488 9652</span>
+            </div>
+            <div class="item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+
+              <span> 25 West 21th Street, Miami FL, USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end mini header -->
+    <!-- start header -->
+    <header class="dark">
+      <div class="container">
+        <div class="line">
+          <a href="index.html" class="logo">
+            <h3>Sempa</h3>
+          </a>
+          <div class="links">
+            <a href="index.html" class="link">الرئيسيه</a>
+            <div class="list_Links">
+              <a href="#" class="link"> حيوانات </a>
+              <div class="list">
+                <li>
+                  <a href="pets.html" class="list_link">بيع و شراء</a>
+                </li>
+                <li>
+                  <a href="hosted-animal.html" class="list_link"> استضافه</a>
+                </li>
+                <li>
+                  <a href="adoption-animal.html" class="list_link"> تبني</a>
+                </li>
+                <li>
+                  <a href="mating-animal.html" class="list_link"> تزاوج</a>
+                </li>
+                <li>
+                  <a href="veterinary-services.html" class="list_link">
+                    خدمات بيطريه</a
+                  >
+                </li>
+                <li>
+                  <a href="animal-training.html" class="list_link"> تدريب</a>
+                </li>
+                <li>
+                  <a href="animal-supplies.html" class="list_link">
+                    مستلزمات الحيوان</a
+                  >
+                </li>
+              </div>
+            </div>
+            <a href="activities-animals.html" class="link">النشاطات</a>
+            <a href="pharmacies.html" class="link">الصيدلايات</a>
+            <a href="clinics.html" class="link">العيادات</a>
+            <a href="sociales.html" class="link">السوشيال</a>
+            <a href="blog.html" class="link">المقالات</a>
+            <a href="rescue-services.html" class="link">خدمه الانقاذ</a>
+          </div>
+          <div class="info">
+            <a href="login.html" class="btn_fill"> تسجيل الدخول </a>
+            <a href="register.html" class="btn_outline"> أنشاء حساب</a>
+
+            <div class="dropdown dropdown_profile">
+              <button
+                class="img_profile"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./images/avatar1.png" alt="avatar" loading="lazy" />
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>حسابي</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="favorite.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>المفضله</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item btn_logout" href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>تسجيل الدخول</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="icon_menu">
+              <svg
+                class="trigger-opener"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="16px"
+                height="12.7px"
+                viewBox="0 0 16 12.7"
+                style="enable-background: new 0 0 16 12.7"
+                xml:space="preserve"
+              >
+                <g>
+                  <rect x="5" y="8.4" width="11" height="2"></rect>
+                  <rect x="0" y="2.4" width="16" height="2"></rect>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- start menu mobile -->
+    <div class="overflow"></div>
+    <div class="menu_mobile">
+      <div class="btn_close_menu">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <a href="register.html" class="btn_login"> تسجيل الدخول</a>
+
+      <div class="links">
+        <a href="index.html" class="link">الرئيسيه</a>
+        <div class="list_Links">
+          <a href="#" class="link"> حيوانات <i class="fa-solid fa-plus"></i></a>
+          <div class="list">
+            <li>
+              <a href="pets.html" class="list_link">بيع و شراء</a>
+            </li>
+            <li>
+              <a href="hosted-animal.html" class="list_link"> استضافه</a>
+            </li>
+            <li>
+              <a href="adoption-animal.html" class="list_link"> تبني</a>
+            </li>
+            <li>
+              <a href="mating-animal.html" class="list_link"> تزاوج</a>
+            </li>
+            <li>
+              <a href="course-details.html" class="list_link"> خدمات بيطريه</a>
+            </li>
+            <li>
+              <a href="animal-training.html" class="list_link"> تدريب</a>
+            </li>
+            <li>
+              <a href="course-details.html" class="list_link">
+                مستلزمات الحيوان</a
+              >
+            </li>
+          </div>
+        </div>
+        <a href="activities-animals.html" class="link">النشاطات</a>
+        <a href="pharmacies.html" class="link">الصيدلايات</a>
+        <a href="clinics.html" class="link">العيادات</a>
+        <a href="sociales.html" class="link">السوشيال</a>
+        <a href="blog.html" class="link">المقالات</a>
+        <a href="rescue-services.html" class="link">خدمه الانقاذ</a>
+      </div>
+    </div>
+    <!-- end menu mobile -->
+
+    <!-- start user details -->
+    <div class="user_details_section">
+      <div class="container">
+        <div class="head_page">
+          <div class="profile">
+            <div class="image">
+              <img
+                src="./images/profile-img.jpg"
+                alt="profile-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="text">
+              <h4 class="name">Ahmed Mohammed</h4>
+              <span>35 بوست</span>
+            </div>
+          </div>
+        </div>
+        <div class="posts">
+          <div class="post">
+            <div class="profile">
+              <div class="image">
+                <img src="./images/avatar1.png" alt="avatar1" loading="lazy" />
+              </div>
+              <div class="details">
+                <h5 class="title">
+                  <a href="user-details.html">Ahmed Mohammed</a>
+                </h5>
+                <span class="date">7س</span>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                إنها سلسلة من الكلمات اللاتينية التي ، عند وضعها في موضعها ، لا
+                تشكل جملًا بمعنى كامل ، ولكنها تعطي الحياة لنص اختبار مفيد لملء
+                الفراغات التي يتم شغلها لاحقًا
+              </p>
+            </div>
+            <div class="image_post">
+              <img src="./images/blog-img1.jpg" alt="blog-img" loading="lazy" />
+            </div>
+            <div class="details_post">
+              <div class="likes">734</div>
+              <span class="comments"> 124 تعليقا </span>
+            </div>
+            <div class="actions">
+              <div class="item active">
+                <div>
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <span>اعجبني</span>
+                </div>
+              </div>
+              <div class="item">
+                <div>
+                  <i class="fa-regular fa-comment"></i>
+                  <span>تعليق</span>
+                </div>
+              </div>
+            </div>
+            <div class="comments_section">
+              <div class="comments">
+                <div class="comment">
+                  <div class="img">
+                    <img
+                      src="./images/avatar1.png"
+                      alt="avatar1"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="info">
+                    <h6>Mostafa Adel</h6>
+                    <p>empor incidunt ut labore et dolore magna aliqua</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="img">
+                    <img
+                      src="./images/avatar1.png"
+                      alt="avatar1"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="info">
+                    <h6>Mostafa Adel</h6>
+                    <p>empor incidunt ut labore et dolore magna aliqua</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form_comment">
+                <div class="img">
+                  <img
+                    src="./images/avatar1.png"
+                    alt="avatar1"
+                    loading="lazy"
+                  />
+                </div>
+                <form action="">
+                  <div class="input">
+                    <input type="text" placeholder="اكتب تعليقا" />
+                  </div>
+                  <div class="bottom">
+                    <div class="input_file">
+                      <label for="images">
+                        <i class="fa-regular fa-image"></i>
+                      </label>
+                      <input type="file" class="d-none" id="images" />
+                    </div>
+
+                    <button class="btn_submit">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="profile">
+              <div class="image">
+                <img src="./images/avatar1.png" alt="avatar1" loading="lazy" />
+              </div>
+              <div class="details">
+                <h5 class="title">
+                  <a href="user-details.html">Ahmed Mohammed</a>
+                </h5>
+                <span class="date">7س</span>
+              </div>
+            </div>
+            <div class="text">
+              <p>
+                إنها سلسلة من الكلمات اللاتينية التي ، عند وضعها في موضعها ، لا
+                تشكل جملًا بمعنى كامل ، ولكنها تعطي الحياة لنص اختبار مفيد لملء
+                الفراغات التي يتم شغلها لاحقًا
+              </p>
+            </div>
+            <div class="image_post">
+              <img src="./images/blog-img1.jpg" alt="blog-img" loading="lazy" />
+            </div>
+            <div class="details_post">
+              <div class="likes">734</div>
+              <span class="comments btn_comment_post"> 124 تعليقا </span>
+            </div>
+            <div class="actions">
+              <div class="item">
+                <div>
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <span>اعجبني</span>
+                </div>
+              </div>
+              <div class="item">
+                <div>
+                  <i class="fa-regular fa-comment"></i>
+                  <span>تعليق</span>
+                </div>
+              </div>
+            </div>
+            <div class="comments_section show">
+              <div class="comments">
+                <div class="comment">
+                  <div class="img">
+                    <img
+                      src="./images/avatar1.png"
+                      alt="avatar1"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="info">
+                    <h6>Mostafa Adel</h6>
+                    <p>empor incidunt ut labore et dolore magna aliqua</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="img">
+                    <img
+                      src="./images/avatar1.png"
+                      alt="avatar1"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="info">
+                    <h6>Mostafa Adel</h6>
+                    <p>empor incidunt ut labore et dolore magna aliqua</p>
+                  </div>
+                </div>
+              </div>
+              <button class="show_more">عرض المزيد</button>
+              <div class="form_comment">
+                <div class="img">
+                  <img
+                    src="./images/avatar1.png"
+                    alt="avatar1"
+                    loading="lazy"
+                  />
+                </div>
+                <form action="">
+                  <div class="input">
+                    <input type="text" placeholder="اكتب تعليقا" />
+                  </div>
+                  <div class="bottom">
+                    <div class="input_file">
+                      <label for="images">
+                        <i class="fa-regular fa-image"></i>
+                      </label>
+                      <input type="file" class="d-none" id="images" />
+                    </div>
+
+                    <button class="btn_submit">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end user details -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="row row_top">
+          <div class="col-12 col-md-3">
+            <div class="widget_about">
+              <div class="logo">
+                <h3>Sempa</h3>
+              </div>
+              <p class="desc">
+                هدفنا هو مساعدة أصحاب القلوب الرحيمة في تلبية احتياجات أليفهم في
+                مكان واحد.
+              </p>
+              <div class="contact_info">
+                العنوان:
+                <span>65 Sunset CA 90026، الولايات المتحدة الأمريكية</span>
+              </div>
+              <div class="contact_info">
+                البريد الإلكتروني: <span>example@max.com</span>
+              </div>
+              <div class="contact_info">اتصل على: <span>555-555-123</span></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="col_links">
+                  <h5 class="title">انضم إلينا</h5>
+                  <span>إضـافة حيوان</span>
+                  <span>إضافة متجر</span>
+                  <span>إضافة مركز طـبي</span>
+                  <span>كيفية إضافة إعلان؟</span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="col_links">
+                  <h5 class="title">تعرف علينا</h5>
+                  <span>من نحن</span>
+                  <span>تواصل معنا</span>
+                  <span>الخصوصية والشروط</span>
+                  <span>سياسة الإسترجاع</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p>Copyright © 2023 by 5Code All Rights Reserved.</p>
+          <div class="social_media">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/menu.js"></script>
+  </body>
+</html>

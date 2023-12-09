@@ -41,6 +41,27 @@
         }
       }
 
+      .input_file {
+        margin-bottom: 12px;
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid rgb(212, 212, 212);
+          padding: 5px;
+          border-radius: 5px;
+
+          span {
+            font-weight: 700;
+          }
+
+          i {
+            font-size: 22px;
+            color: $primary-color;
+          }
+        }
+      }
+
       .btn_submit {
         padding: 5px 30px;
         width: 100%;
@@ -69,7 +90,8 @@
           margin-bottom: 12px;
         }
 
-        button {
+        button,
+        a {
           display: flex;
           align-items: center;
           justify-content: center;

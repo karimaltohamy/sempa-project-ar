@@ -9,6 +9,30 @@
     overflow: hidden;
 
     .text {
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        .img {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+
+        span {
+          font-weight: 700;
+        }
+      }
+
       .type {
         padding: 1px 10px;
         background-color: #0052b1;
@@ -17,7 +41,13 @@
         font-size: 15px;
         width: fit-content;
         display: block;
-        margin-right: auto;
+      }
+
+      .message {
+        margin-top: 6px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: gray;
       }
 
       .title {
@@ -74,9 +104,35 @@
         }
       }
 
+      .info_price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .price {
+          font-size: 24px;
+        }
+
+        .old_price {
+          font-size: 15px;
+          color: gray;
+          text-decoration: line-through;
+        }
+
+        .bdg_dsct {
+          padding: 2px 5px;
+          font-size: 14px;
+          background-color: #fef3e9;
+          color: $primary-color;
+          border-radius: 4px;
+        }
+      }
+
       .price {
         font-size: 35px;
         font-weight: 700;
+        margin-bottom: 0;
         color: $primary-color;
       }
 
@@ -91,7 +147,6 @@
           gap: 7px;
           font-size: 20px;
           margin-bottom: 0;
-
           color: $primary-color;
           font-weight: 600;
 
@@ -106,23 +161,6 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
-
-        .profile {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          .img {
-            img {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-            }
-          }
-
-          span {
-            font-weight: 700;
-          }
-        }
       }
 
       .bottom {
@@ -135,6 +173,141 @@
             color: gray;
           }
         }
+      }
+
+      .info_details {
+        margin-top: 12px;
+        padding-top: 10px;
+        border-top: 1px solid rgb(215 215 215);
+
+        h5 {
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+
+        .line_section {
+          padding: 0;
+          box-shadow: none;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 1px;
+            background-color: rgb(215 215 215);
+          }
+
+          .appointments {
+            .item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              &:not(:last-child) {
+                margin-bottom: 10px;
+              }
+
+              h6 {
+                margin-bottom: 0;
+                font-weight: 700;
+              }
+
+              span {
+                color: gray;
+                font-size: 15px;
+              }
+            }
+          }
+
+          .info_appointments {
+            .item {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              &:not(:last-child) {
+                margin-bottom: 10px;
+              }
+
+              h6 {
+                margin-bottom: 0;
+                font-weight: 700;
+              }
+
+              span {
+                color: gray;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      .info_awards {
+        margin-top: 12px;
+        padding-top: 10px;
+        border-top: 1px solid rgb(215 215 215);
+
+        h5 {
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+
+        .awards {
+          .item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+
+            h6 {
+              margin-bottom: 0;
+              font-weight: 700;
+            }
+
+            span {
+              color: gray;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .competition_conditions {
+        margin-top: 12px;
+        padding-top: 10px;
+        border-top: 1px solid rgb(215 215 215);
+
+        h5 {
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+
+        .items {
+          .item {
+            &:not(:last-child) {
+              margin-bottom: 10px;
+
+              span {
+                display: block;
+                color: gray;
+              }
+            }
+          }
+        }
+      }
+
+      .rate_now {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 20px;
       }
     }
 
@@ -217,6 +390,14 @@
       margin-bottom: 25px;
     }
 
+    .message {
+      margin-top: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: gray;
+      text-align: center;
+    }
+
     .reviews {
       .review {
         display: flex;
@@ -257,6 +438,16 @@
       }
     }
 
+    .show_more {
+      margin: 10px auto;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      color: $primary-color;
+      display: block;
+      text-align: center;
+    }
+
     .container_btn {
       margin-top: 20px;
       text-align: center;
@@ -266,12 +457,39 @@
       }
     }
   }
+
+  .product_specification {
+    box-shadow: 0px -1px 20px 2px #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+
+    .head {
+      padding: 8px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+
+      h4 {
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+
+    .specification {
+      padding: 12px;
+
+      p {
+        margin-bottom: 0;
+        line-height: 1.7;
+        color: rgb(105, 105, 105);
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .pet_details_section {
     .line {
-      flex-direction: column-reverse;
       padding: 15px;
 
       .text {
@@ -308,9 +526,8 @@
         }
 
         .info_contact {
-          flex-direction: column;
           gap: 8px;
-          align-items: start;
+          margin-top: 15px;
         }
 
         .bottom {
@@ -321,6 +538,21 @@
 
             span {
               font-size: 14px;
+            }
+          }
+        }
+
+        .info_details {
+          .line_section {
+            gap: 0;
+            &::before {
+              display: none;
+            }
+
+            .info_appointments {
+              border-bottom: 1px solid rgb(215 215 215);
+              margin-bottom: 12px;
+              padding-bottom: 10px;
             }
           }
         }
@@ -366,16 +598,24 @@
   }
 
   .boxs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
     margin-top: 40px;
 
     .box {
-      border: 1px solid rgb(227 227 227);
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
       position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(228 228 228);
+        border-radius: 8px;
+        overflow: hidden;
+      }
 
       .badge {
         position: absolute;
@@ -400,6 +640,8 @@
           width: 100%;
           height: 225px;
           object-fit: cover;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
         }
       }
 
@@ -449,6 +691,52 @@
           .price {
             font-weight: 700;
             color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.animal_supplies {
+    .boxs {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+      .box {
+        .image {
+          img {
+            height: 210px;
+          }
+        }
+
+        .content {
+          .title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 1px;
+          }
+
+          .discount_price {
+            font-weight: 700;
+            font-size: 18px;
+          }
+
+          .bottom {
+            justify-content: start;
+            gap: 10px;
+
+            .old_price {
+              font-size: 15px;
+              color: gray;
+              text-decoration: line-through;
+            }
+
+            .bdg_dsct {
+              padding: 2px 5px;
+              font-size: 14px;
+              background-color: #fef3e9;
+              color: $primary-color;
+              border-radius: 4px;
+            }
           }
         }
       }

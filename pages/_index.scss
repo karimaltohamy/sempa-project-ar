@@ -31,7 +31,7 @@
 
     .boxs {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
 
       .box {
         background-repeat: no-repeat;
@@ -192,6 +192,7 @@
       .icon {
         svg {
           width: 80px;
+          fill: black;
         }
       }
 
@@ -381,10 +382,12 @@
 
   .boxs {
     margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 30px;
     border: 2px dashed #778f9d;
+
+    .owl-nav,
+    .owl-dots {
+      display: none;
+    }
 
     .box {
       padding: 40px 25px;
@@ -554,10 +557,12 @@
   }
 
   .boxs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
     margin-top: 40px;
+
+    .owl-nav,
+    .owl-dots {
+      display: none;
+    }
 
     .box {
       border: 1px solid rgb(227 227 227);
@@ -752,10 +757,12 @@
   }
 
   .boxs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
     margin-top: 80px;
+
+    .owl-dots,
+    .owl-nav {
+      display: none;
+    }
 
     .box {
       border-radius: 10px;

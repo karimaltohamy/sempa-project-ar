@@ -236,10 +236,14 @@
     <!-- start shop animals -->
     <div class="shop_animals_section section">
       <div class="container">
-        <div class="path">
-          <a href="index.html">الرئيسيه</a>
-          <i class="fa-solid fa-chevron-left"></i>
-          <a href="pharmacies.html"> الصيدلايات</a>
+        <div class="head d-flex align-items-center justify-content-between">
+          <div class="path">
+            <a href="index.html">الرئيسيه</a>
+            <i class="fa-solid fa-chevron-left"></i>
+            <a href="animal-training.html"> مستلزمات الحيوانات</a>
+          </div>
+
+          <button class="btn_publishing btn_fill">نشر اعلان</button>
         </div>
         <div class="line">
           <div class="filter">
@@ -552,6 +556,93 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- start popup publishing -->
+    <div class="popup_box popup_publishing">
+      <div class="content">
+        <div class="head">
+          <h3>نشر اعلان</h3>
+          <i class="fa-solid fa-xmark close_publishing"></i>
+        </div>
+
+        <div class="form">
+          <form action="">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">اسم </label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">العنوان</label>
+                  <div class="input">
+                    <input id="" type="text" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">معاد العمل من</label>
+                  <div class="input">
+                    <input id="" type="time" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="input_item">
+                  <label for="">معاد العمل الي</label>
+                  <div class="input">
+                    <input id="" type="time" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">التليفون</label>
+                  <div class="input">
+                    <input id="" type="number" />
+                    <i class="fa-solid fa-pencil"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="add_images">
+                  <h5>صور المكان</h5>
+                  <div class="input_file">
+                    <label for="images">
+                      <i class="fa-regular fa-image"></i>
+                    </label>
+                    <input type="file" class="d-none" id="images" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input_item">
+                  <label for="">الوصف</label>
+                  <textarea name="" id=""></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-btn">
+              <button class="btn_booking_now">نشر</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end popup publishing -->
+
     <script src="js/menu.js"></script>
+    <script src="js/selectFilter.js"></script>
   </body>
 </html>

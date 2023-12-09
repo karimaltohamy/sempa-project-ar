@@ -2,12 +2,15 @@
 
 // start shop_animals_section
 .shop_animals_section {
+  .head {
+    margin-bottom: 12px;
+  }
+
   .path {
     display: flex;
     align-items: center;
     gap: 5px;
     color: gray;
-    margin-bottom: 12px;
 
     i {
       font-size: 13px;
@@ -62,6 +65,12 @@
           align-items: center;
           gap: 10px;
 
+          .input {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+          }
+
           label {
             font-weight: 700;
           }
@@ -79,6 +88,24 @@
 
           i {
             color: $primary-color;
+          }
+        }
+
+        .select_filter_products {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          label {
+            font-weight: 600;
+          }
+
+          select {
+            color: gray;
+            font-weight: 600;
+            border: none;
+            width: 100px;
+            outline: none;
           }
         }
       }
@@ -175,6 +202,54 @@
       }
     }
   }
+
+  &.animal_supplies {
+    .line {
+      .boxs {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+        .box {
+          .image {
+            img {
+              height: 210px;
+            }
+          }
+
+          .content {
+            .title {
+              font-size: 17px;
+              font-weight: 700;
+              margin-bottom: 1px;
+            }
+
+            .discount_price {
+              font-weight: 700;
+              font-size: 18px;
+            }
+
+            .bottom {
+              justify-content: start;
+              gap: 10px;
+
+              .old_price {
+                font-size: 15px;
+                color: gray;
+                text-decoration: line-through;
+              }
+
+              .bdg_dsct {
+                padding: 2px 5px;
+                font-size: 14px;
+                background-color: #fef3e9;
+                color: $primary-color;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -183,11 +258,26 @@
       .filter {
         form {
           justify-content: center;
+          // flex-direction: column;
           gap: 5px;
+
+          > div {
+            width: 49%;
+
+            &:nth-child(3),
+            &:nth-child(4) {
+              width: 100%;
+            }
+          }
+
           .buttons_filter {
+            display: flex;
+            align-items: center;
+
             button {
               padding: 3px 6px;
               font-size: 14px;
+              flex: 1;
             }
           }
 
@@ -196,17 +286,24 @@
             padding: 1px 8px;
 
             label {
-              font-size: 13px;
-            }
-
-            input,
-            select {
-              padding: 1px 8px;
-              font-size: 14px;
+              font-size: 10px;
             }
 
             input {
-              width: 25px;
+              padding: 1px 8px;
+              font-size: 13px;
+              width: 80px;
+              flex: 1;
+            }
+
+            select {
+              padding: 0px 0px;
+              font-size: 13px;
+              flex: 1;
+            }
+
+            .input {
+              flex: 1;
             }
 
             i {
